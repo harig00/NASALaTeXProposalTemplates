@@ -8,11 +8,68 @@
 \usepackage{pdflscape}
 \usepackage{times}
 \usepackage[absolute]{textpos}
+\usepackage{tabularx}
 \usepackage{ltablex,booktabs,multirow,lipsum}
 \usepackage{calc}
 \usepackage{enumitem,amssymb,pifont}
 
  \newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+
+
+
+\usepackage[margin=1in]{geometry}
+%\usepackage{titlesec}
+%\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{-2pt plus 2pt minus 2pt}
+%\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{-2pt plus 2pt minus 2pt}
+
+\clubpenalty=10000 % BOOK  NATURE SCIENCE ARTICLE
+\widowpenalty=10000 % BOOK  NATURE SCIENCE ARTICLE
+\usepackage{color,graphicx,epstopdf,epsfig} % SEMINARP SEMINARL ARTICLE
+\usepackage{titlesec} % ARTICLE 
+% \usepackage{empgeq} % ARTICLE
+\usepackage{paralist} % BOOK ARTICLE
+\usepackage[greek,english]{babel} % SEMINARP SEMINARL ARTICLE BOOK
+\pdfcompresslevel=9 % SEMINARP SEMINARL ARTICLE
+\usepackage{times} % GJIR GJIC BOOK ARTICLE JGRC JGRR JGRG GRLR THESIS LETTER JOG CUP
+\usepackage{verbatim} % GJIR GJIC BOOK SEMINARL ARTICLE JGRC JGRR JGRG GRLR THESIS LETTER JOG
+\usepackage{natbib} % OPTION SEMINARP SEMINARL THESIS PRS BOOK JOG ARTICLE LETTER 
+\usepackage{braket} % ARTICLE GJIC GJIR
+\usepackage{makeidx} % GJIR GJIC BOOK SEMINARP SEMINARL ARTICLE  JGRC JGRR JGRG GRLC GRLR THESIS JOG 
+\usepackage{phonetic} % GJIR GJIC BOOK SEMINARP SEMINARL ARTICLE JGRC JGRR JGRG GRLC GRLR THESIS JOG LETTER CUP
+\usepackage{fancyhdr} % GJIR GJIC BOOK SEMINARP SEMINARL ARTICLE JGRC JGRR JGRG GRLC GRLR THESIS JOG LETTER
+\usepackage{eurosym} % GJIR GJIC BOOK SEMINARP SEMINARL ARTICLE  JGRC JGRR JGRG GRLC GRLR THESIS JOG LETTER
+\usepackage{subfig} % GJIR GJIC BOOK SEMINARP SEMINARL ARTICLE  JGRC JGRR JGRG GRLC GRLR THESIS JOG LETTER
+ % BOOK ARTICLE
+\usepackage{mathrsfs} % PRS JOG GJIC GJIR ARTICLE
+\usepackage{mathdots} % PRS JOG GJIC GJIR ARTICLE
+\usepackage{amsfonts} % SEMINARL SEMINARP ARTICLE CUP
+\usepackage{multirow} % SEMINARL SEMINARP ARTICLE CUP
+
+\usepackage{pdflscape}
+ \usepackage{enumitem,pifont}
+
+\usepackage[hyphens]{url}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\surl}[1]{{\small\url{#1}}}
+\newcommand{\snlurl}[1]{{\small\nolinkurl{#1}}}
+
+\usepackage{pdfpages}
+
+% Things we need for tables
+ \usepackage{ltablex,booktabs,multirow}
+ \usepackage{calc}
+ \usepackage{tabularx}
+
+% To reduce spacing around sections 
+\usepackage{titlesec}
+\titlespacing\section{0pt}{4pt plus 2pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{4pt plus 2pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{4pt plus 2pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+
+
+
 
 \begin{document}
 
@@ -58,17 +115,16 @@ P. Star & Collaborator & 0 & 0 &\phantom{ab} & 0 & 0 & 0 & \phantom{ab} & 0 & 0 
 
 \hline
 
-\multicolumn{16}{@{}l}{Comments: Collaborators are not listed in Current and Pending Support and as such their ``Other Projects'' committed time is listed as zero.} \\
+\multicolumn{20}{@{}p{\dimexpr\linewidth}@{}}{Collaborators are not listed in Current and Pending Support and as such their ``Other Projects'' committed time is listed as zero.} \\
 
 \bottomrule
 
 \end{tabularx}
-}
-
-\clearpage
+} % end table col sep
 
 \end{landscape}
 
+\clearpage
 
 
 
@@ -104,7 +160,7 @@ Support: \rlap{$\square$}\raisebox{2pt}{\large\hspace{1pt}\ding{51}} Current $\s
 
 \end{tabularx}
 
-
+\normalsize
 
 
 \end{document}
