@@ -1,5 +1,6 @@
-# NASALaTeXProposalTemplates
-LaTeX templates for NASA ROSES summary table of work effort and current and pending support
+# NASA LaTeX Proposal Templates
+
+LaTeX templates for NASA ROSES summary table of work effort and current and pending support tables.
 
 NASA ROSES submissions often require specific formats for the Summary of Work Effort Table and the Current and Pending Support tables. NASA provides templates for these tables, but only in .pdf, .xlsx, and .doc formats. https://science.nasa.gov/researchers/templates-for-earth-science-division-appendix-a-roses-proposals Here I have created a template in LaTex that mirrors the pdf format of the table.
 

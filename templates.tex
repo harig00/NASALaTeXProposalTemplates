@@ -1,0 +1,107 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin =1in]{geometry}
+\usepackage{pdflscape}
+\usepackage{times}
+\usepackage[absolute]{textpos}
+\usepackage{ltablex,booktabs,multirow,lipsum}
+\usepackage{calc}
+\usepackage{enumitem,amssymb,pifont}
+
+ \newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\begin{document}
+
+% Note:
+% If the document font size is 12pt, then footnote size will be 10pt and scriptsize will be 8pt, both of which are the font sizes used in the NASA templates for the table of work effort.
+
+\begin{landscape}
+
+\centering\noindent\textbf{Table of Work Effort}
+
+\renewcommand{\arraystretch}{1.2}
+\footnotesize
+{\setlength{\tabcolsep}{0.3em}
+\begin{tabularx}{\textwidth}{@{}b{2.5cm}b{\widthof{Collaborator}}b{\widthof{\scriptsize Institution}}b{\widthof{\scriptsize Institution}}Xb{\widthof{\scriptsize Support}}b{\widthof{\scriptsize Total}}p{\widthof{\scriptsize Projects}}Xb{\widthof{\scriptsize Support}}b{\widthof{\scriptsize Total}}p{\widthof{\scriptsize Projects}}Xb{\widthof{\scriptsize Support}}b{\widthof{\scriptsize Total}}p{\widthof{\scriptsize Projects}}Xb{\widthof{\scriptsize Support}}b{\widthof{\scriptsize Total}}p{\widthof{\scriptsize Projects}}@{}} \toprule
+
+{} & {} & \multicolumn{18}{c}{Commitment (months per year)} \\
+
+{} & {} & {} & {} & {} & \multicolumn{3}{c}{\textbf{Year 1}} & {} & \multicolumn{3}{c}{\textbf{Year 2}} & {} & \multicolumn{3}{c}{\textbf{Year 3}} & {} & \multicolumn{3}{c}{\textbf{Sum}} \\
+\cmidrule(lr){6-8}
+\cmidrule(lr){10-12}
+\cmidrule(lr){14-16}
+\cmidrule(lr){18-20}
+
+{} & {} & {} & {} & {} & \multicolumn{2}{c}{\scriptsize This Project} & \multirow[t]{2}{=}{\scriptsize Other Projects} & {} & \multicolumn{2}{c}{\scriptsize This Project} & \multirow[t]{2}{=}{\scriptsize Other Projects} & {} & \multicolumn{2}{c}{\scriptsize This Project} & \multirow[t]{2}{=}{\scriptsize Other Projects} & {} & \multicolumn{2}{c}{\scriptsize This Project} & \multirow[t]{2}{=}{\scriptsize Other Projects} \\
+\cmidrule(lr){6-7}
+\cmidrule(lr){10-11}
+\cmidrule(lr){14-15}
+\cmidrule(lr){18-19}
+
+\textbf{Name} & \textbf{Role} & \scriptsize Institution Support & \multirow[b]{-3}{=}{\scriptsize Institution Research Time} & {} & \scriptsize NASA Support & \scriptsize Total & {} & {} & \scriptsize NASA Support & \scriptsize Total & {} & {} & \scriptsize NASA Support & \scriptsize Total & {} & {} & \scriptsize NASA Support & \scriptsize Total & {} \\
+
+\hline
+
+
+C. Harig & PI & 0 & 0 &\phantom{ab} & 0 & 0 & 0 & \phantom{ab} & 0 & 0 & 0 & \phantom{ab} & 0 & 0 & 0 & \phantom{ab} &0 & 0 & 0 \\
+
+A. Ketchum & Collaborator & 0 & 0 &\phantom{ab} & 0 & 0 & 0 & \phantom{ab} & 0 & 0 & 0 & \phantom{ab} & 0 & 0 & 0 & \phantom{ab} &0 & 0 & 0 \\
+
+\multicolumn{16}{@{}l}{} \\
+
+\hline
+\multicolumn{2}{@{}l}{\textbf{Sum of work effort:}}  & 0 & 0 &\phantom{ab} & 0 & 0 & 0 & \phantom{ab} & 0 & 0 & 0 & \phantom{ab} & 0 & 0 & 0 & \phantom{ab} &0 & 0 & 0 \\
+
+\hline
+
+\multicolumn{16}{@{}l}{Comments:} \\
+
+\bottomrule
+
+\end{tabularx}
+}
+
+\clearpage
+
+\end{landscape}
+
+
+
+
+
+
+\centering\noindent\textbf{Current and Pending Support}
+
+\renewcommand{\arraystretch}{1.2}
+\footnotesize
+\begin{tabularx}{0.5\textwidth}{|p{5cm}p{4cm}p{4cm}X|} \hline
+
+\multicolumn{4}{|p{\dimexpr\textwidth-2\tabcolsep-0.8pt}|}{The following information should be provided for each investigator and other senior personnel. Failure to provide this information may delay consideration of this proposal.} \\
+
+\hline
+
+\multicolumn{2}{|l|}{Investigator: Christopher Harig} & \multicolumn{2}{p{\dimexpr\textwidth-6\tabcolsep-1.2pt-9cm}|}{Other agencies (including NASA) to which this proposal has been/will be submitted: None} \\
+
+\hline
+
+Support: \rlap{$\square$}\raisebox{2pt}{\large\hspace{1pt}\ding{51}} Current $\square$ Pending & {} & {} & {} \\ 
+
+\multicolumn{4}{|p{\dimexpr\textwidth-2\tabcolsep-0.8pt}|}{Project/Proposal Title: \ \ \ \ \ \textbf{None}}\\
+
+\multicolumn{4}{|p{\dimexpr\textwidth-2\tabcolsep-0.8pt}|}{Source of Support:}\\
+
+\multicolumn{4}{|p{\dimexpr\textwidth-2\tabcolsep-0.8pt}|}{Total Award Period Covered:}\\
+
+\multicolumn{4}{|p{\dimexpr\textwidth-2\tabcolsep-0.8pt}|}{Person-Months Per Year Committed to the Project:}\\
+
+\hline
+
+% Repeat support box here if you have more to add.
+
+\end{tabularx}
+
+
+
+
+\end{document}
